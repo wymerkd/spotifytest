@@ -3,7 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
-<<<<<<< HEAD
+
 
 // THIS WILL GRAB SLIDER VALUE AND WILL CONVERT TO SPOTIFY DECIMAL FORMAT
 var slider = document.getElementById("myValence");
@@ -14,13 +14,13 @@ slider.oninput = function() {
 output.innerHTML = this.value;
  const sliderValue = output.innerHTML;
  spotifyValance = (parseInt(sliderValue)) / 100;
-  // console.log(spotifyValance);
+  console.log(spotifyValance);
+}
 
-=======
 if (window.location.hash.length > 10) {
   $('#log-in').hide();
   $('#genreBoxes').show();
->>>>>>> origin/front-end
+// >>>>>>> origin/front-end
 }
 
 $("#apiButton").on("click",function(){
