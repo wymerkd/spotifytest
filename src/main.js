@@ -27,12 +27,12 @@ $("#apiButton").on("click",function(){
   })
 })
 
-// var slider = document.getElementById("myValence");
-// var output = document.getElementById("valenceSlider");
-// output.innerHTML = slider.value;
-// slider.oninput = function() {
-//   output.innerHTML = this.value;
-// }
+var slider = document.getElementById("myValence");
+var output = document.getElementById("valenceSlider");
+output.innerHTML = slider.value;
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
 //
 // $(document).ready(function() {
 //   let genre = ""
