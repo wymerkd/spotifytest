@@ -8,11 +8,12 @@ import './styles.css';
 var slider = document.getElementById("myValence");
 var output = document.getElementById("valenceSlider");
 output.innerHTML = slider.value;
+let spotifyValance = 0;
 slider.oninput = function() {
 output.innerHTML = this.value;
  const sliderValue = output.innerHTML;
- const spotifyValance = (parseInt(sliderValue)) / 100;
-  console.log(spotifyValance);
+ spotifyValance = (parseInt(sliderValue)) / 100;
+  // console.log(spotifyValance);
   
 }
 
@@ -20,7 +21,8 @@ $("#apiButton").on("click",function(){
    console.log(window.location)
    var uriHash= window.location.hash //holds the access token
    var accessToken = uriHash.replace('#access_token=', '')
-   var apiURL= "https://api.spotify.com/v1/recommendations?limit=10&market=US&seed_genres=country&target_valence=0.4"
+   console.log(spotifyValance);
+   var apiURL= `https://api.spotify.com/v1/recommendations?limit=10&market=US&seed_genres=country&target_valence=${spotifyValance}`
   $.ajax({
 
       url: apiURL,
