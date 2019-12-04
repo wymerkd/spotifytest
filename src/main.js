@@ -3,6 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
+<<<<<<< HEAD
 
 // THIS WILL GRAB SLIDER VALUE AND WILL CONVERT TO SPOTIFY DECIMAL FORMAT
 var slider = document.getElementById("myValence");
@@ -14,7 +15,12 @@ output.innerHTML = this.value;
  const sliderValue = output.innerHTML;
  spotifyValance = (parseInt(sliderValue)) / 100;
   // console.log(spotifyValance);
-  
+
+=======
+if (window.location.hash.length > 10) {
+  $('#log-in').hide();
+  $('#genreBoxes').show();
+>>>>>>> origin/front-end
 }
 
 $("#apiButton").on("click",function(){
@@ -44,62 +50,71 @@ $("#apiButton").on("click",function(){
 
 
 
-//
-// $(document).ready(function() {
-//   let genre = ""
-//   $("#rock").on("click", function(){
-//     let genre = "rock";
-//     $('#insertGenre').html('Rock').val();
-//     $('#genreBoxes').hide();
-//     alert("Rock was clicked.");
-//   });
-//   $("#hip-hop").on("click", function(){
-//     alert("Hip-Hop was clicked.");
-//     let genre = "hip-hop";
-//     $('#insertGenre').html('Hip-Hop').val();
-//     $('#genreBoxes').hide();
-//   });
-//   $("#electronic").on("click", function(){
-//     alert("The paragraph was clicked.");
-//     let genre = "electronic";
-//     $('#insertGenre').html('Electronic').val();
-//     $('#genreBoxes').hide();
-//   });
-//   $("#country").on("click", function(){
-//     alert("Country was clicked. YEEEYEEE");
-//     let genre = "country";
-//     $('#insertGenre').html('Country').val();
-//     $('#genreBoxes').hide();
-//   });
-//   $("#indie").on("click", function(){
-//     alert("Indie was clicked.");
-//     let genre = "indie";
-//     $('#insertGenre').html('Indie').val();
-//     $('#genreBoxes').hide();
-//   });
-//   $("#metal").on("click", function(){
-//     alert("Metal was clicked.");
-//     let genre = "metal";
-//     $('#insertGenre').html('Metal').val();
-//     $('#genreBoxes').hide();
-//   });
-//   $("#world").on("click", function(){
-//     alert("World was clicked.");
-//     let genre = "world-music"
-//     $('#insertGenre').html('World').val();
-//     $('#genreBoxes').hide();
-//   });
-//   $("#soundtracks").on("click", function(){
-//     alert("Soundtracks was clicked.");
-//     let genre = "soundtracks";
-//     $('#insertGenre').html('Soundtracks').val();
-//     $('#genreBoxes').hide();
-//   });
-//   $("#wildcard").on("click", function(){
-//     alert("Wildcard was clicked.");
-//     let genre = "opera";
-//     $('#insertGenre').html('Wildcard').val();
-//     $('#genreBoxes').hide();
-//   });
-//   // $('#sliderPage').show();
-// });
+
+$(document).ready(function() {
+  let genre = ""
+  $("#rock").on("click", function(){
+    let genre = "rock";
+    $('#insertGenre').html('Rock').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+    alert("Rock was clicked.");
+  });
+  $("#hip-hop").on("click", function(){
+    alert("Hip-Hop was clicked.");
+    let genre = "hip-hop";
+    $('#insertGenre').html('Hip-Hop').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+  $("#electronic").on("click", function(){
+    alert("The paragraph was clicked.");
+    let genre = "electronic";
+    $('#insertGenre').html('Electronic').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+  $("#country").on("click", function(){
+    alert("Country was clicked. YEEEYEEE");
+    let genre = "country";
+    $('#insertGenre').html('Country').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+  $("#indie").on("click", function(){
+    alert("Indie was clicked.");
+    let genre = "indie";
+    $('#insertGenre').html('Indie').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+  $("#metal").on("click", function(){
+    alert("Metal was clicked.");
+    let genre = "metal";
+    $('#insertGenre').html('Metal').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+  $("#world").on("click", function(){
+    alert("World was clicked.");
+    let genre = "world-music"
+    $('#insertGenre').html('World').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+  $("#soundtracks").on("click", function(){
+    alert("Soundtracks was clicked.");
+    let genre = "soundtracks";
+    $('#insertGenre').html('Soundtracks').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+  $("#wildcard").on("click", function(){
+    alert("Wildcard was clicked.");
+    let genre = "opera";
+    $('#insertGenre').html('Wildcard').val();
+    $('#genreBoxes').hide();
+    $('#sliderPage').show();
+  });
+
+});
