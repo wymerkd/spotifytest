@@ -3,6 +3,19 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
+
+// THIS WILL GRAB SLIDER VALUE AND WILL CONVERT TO SPOTIFY DECIMAL FORMAT
+var slider = document.getElementById("myValence");
+var output = document.getElementById("valenceSlider");
+output.innerHTML = slider.value;
+slider.oninput = function() {
+output.innerHTML = this.value;
+ const sliderValue = output.innerHTML;
+ const spotifyValance = (parseInt(sliderValue)) / 100;
+  console.log(spotifyValance);
+  
+}
+
 $("#apiButton").on("click",function(){
    console.log(window.location)
    var uriHash= window.location.hash //holds the access token
@@ -27,12 +40,8 @@ $("#apiButton").on("click",function(){
   })
 })
 
-var slider = document.getElementById("myValence");
-var output = document.getElementById("valenceSlider");
-output.innerHTML = slider.value;
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+
+
 //
 // $(document).ready(function() {
 //   let genre = ""
