@@ -2,18 +2,33 @@
   display: none;
 }
 
+#log-in {
+  background-image: url("https://media.giphy.com/media/Rki7fShXrJ3JZCpVeb/giphy.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vw;
+  width: 100vw;
+}
+
+#genreBoxes {
+  background-color: grey;
+  /* background-image: url("https://media.giphy.com/media/Rki7fShXrJ3JZCpVeb/giphy.gif"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vw;
+  width: 100vw;
+}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
+/* body {
      font-family: 'Oswald', sans-serif;
-     background-image: url("https://media.giphy.com/media/Rki7fShXrJ3JZCpVeb/giphy.gif");
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
-}
+     background-color: green;
+} */
 
 
 /* h1{
