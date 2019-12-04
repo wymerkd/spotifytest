@@ -57,8 +57,7 @@ body {
      background-color: #00B16A;
 }
 
-button{
-
+button {
  border: 0;
  background: black;
  color: white;
@@ -69,9 +68,11 @@ button{
  margin-left: 28%;
 
 }
-h1,img{
+
+/* h1{
   margin-left: 45%;
-}
+} */
+
 #container {
 	width:100%;
 	margin: auto;
@@ -89,10 +90,18 @@ h2{
 /* ADDITIONAL STYLES
 /*******************************************/
 
-.img-container {
+.container {
   position: relative;
   text-align: center;
   color: white;
+}
+
+.flex-container {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
 }
 
 .centered {
