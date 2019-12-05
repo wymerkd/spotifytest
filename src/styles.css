@@ -12,8 +12,7 @@
 }
 
 #genreBoxes {
-  background-color: grey;
-  /* background-image: url("https://media.giphy.com/media/Rki7fShXrJ3JZCpVeb/giphy.gif"); */
+  background-image: url("http://getwallpapers.com/wallpaper/full/1/9/9/123374.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -21,42 +20,16 @@
   width: 100vw;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-/* body {
-     font-family: 'Oswald', sans-serif;
-     background-color: green;
-} */
-
-
-/* h1{
-  margin-left: 45%;
-} */
 
 #container {
 	width:100%;
 	margin: auto;
 }
 
-/* h2{
-  margin-left: 23%;
-} */
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-/* Center the container */
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255, 0.9);
 }
 
 .flex-container {
@@ -73,6 +46,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
+  text-shadow: lightblue;
+  text-shadow:
+		-.5px -.5px 0 black,
+		.5px -.5px 0 black,
+		-.5px .5px 0 black,
+		.5px .5px 0 black;
 }
 
 #logInBtn {
@@ -80,13 +59,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Raleway', sans-serif;
-  border: 0.5rem double white;
+  border: 0.5rem double rgb(255, 255, 255, 0.8);
+}
+
+img {
+  border-radius: 15px 50px;
 }
 
 a {
   color: white;
+}
+
+.centered:hover {
+  color: yellow;
 }
 
 a:hover {
