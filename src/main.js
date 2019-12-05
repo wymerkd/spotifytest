@@ -21,10 +21,11 @@ output.innerHTML = this.value;
 if (window.location.hash.length > 10) {
   $('#log-in').hide();
   $('#genreBoxes').show();
-// >>>>>>> origin/front-end
 }
 
 $("#apiButton").on("click",function(){
+   $('#sliderPage').hide();
+   $('#results').show();
    console.log(window.location)
    var uriHash= window.location.hash //holds the access token
    var accessToken = uriHash.replace('#access_token=', '')
@@ -32,7 +33,6 @@ $("#apiButton").on("click",function(){
    console.log(genre);
    var apiURL= `https://api.spotify.com/v1/recommendations?limit=10&market=US&seed_genres=${genre}&target_valence=${spotifyValance}`
   $.ajax({
-
       url: apiURL,
       headers: {
        'Authorization': 'Bearer ' + accessToken
@@ -43,14 +43,11 @@ $("#apiButton").on("click",function(){
           $("img").attr("src", response.tracks[0].album.images[1].url);
 
       },
-
       error: function(r){
         console.log(r);
   }
   })
 })
-
-
 
 let genre = "";
   $("#rock").on("click", function(){
@@ -58,7 +55,6 @@ let genre = "";
     $('#genreBoxes').hide();
     $('#sliderPage').show();
     genre = "rock";
-
   });
   $("#hip-hop").on("click", function(){
     $('#insertGenre').html('Hip-Hop').val();

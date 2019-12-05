@@ -1,6 +1,18 @@
 #genreBoxes {
   display: none;
 }
+#sliderPage {
+  display: none;
+  background-color: green;
+  height: 200px;
+  width: 100vw;
+}
+#results {
+  display: none;
+  background-color: green;
+  height: 100vw;
+  width: 100vw;
+}
 
 #log-in {
   background-image: url("https://media.giphy.com/media/Rki7fShXrJ3JZCpVeb/giphy.gif");
