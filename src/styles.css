@@ -17,18 +17,30 @@
   width: 100vw;
 }
 
+body {
+background-color: black;
+}
+
 #sliderPage {
+  font-family: 'Raleway', sans-serif;
   display: none;
-  background-color: green;
-  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://media.giphy.com/media/Rki7fShXrJ3JZCpVeb/giphy.gif");
+  height: 100vw;
   width: 100vw;
 }
 
 #results {
+  height: 100vw;
   display: none;
   background-color: #E5F77D;
   background: linear-gradient(178deg, rgba(124,117,152,1) 0%, rgba(210,105,190,0.9808298319327731) 26%, rgba(223,125,125,1) 45%, rgba(185,67,52,0.8071603641456583) 74%, rgba(237,144,73,1) 94%, rgba(229,247,125,1) 100%);
   padding: 5%;
+  /* background-size: 100vw; */
+  background-repeat: no-repeat;
+
 }
 
 #img-1 {
@@ -120,6 +132,17 @@ a:hover {
 
 
 /* Slider CSS styles */
+#apiButton{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  border: 0.5rem double rgb(255, 255, 255, 0.8);
+}
+
 #makeButton {
   margin: 0, auto;
 }

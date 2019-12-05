@@ -13,9 +13,32 @@ output.innerHTML = slider.value;
 let spotifyValance = 0;
 slider.oninput = function() {
 output.innerHTML = this.value;
+
  const sliderValue = output.innerHTML;
  spotifyValance = (parseInt(sliderValue)) / 100;
+  console.log(sliderValue);
   console.log(spotifyValance);
+  if (sliderValue < 10) {
+    output.innerHTML = "sad";
+  } else if(sliderValue < 20) {
+    output.innerHTML = "depressed";
+  } else if(sliderValue < 30) {
+    output.innerHTML = "who cares anyway";
+  } else if(sliderValue < 40) {
+    output.innerHTML = "melancholy";
+  } else if(sliderValue < 50) {
+    output.innerHTML = "Indifferent to Everything";
+  } else if(sliderValue < 60) {
+    output.innerHTML = "Alright";
+  } else if(sliderValue < 70) {
+    output.innerHTML = "Feeling Good";
+  } else if (sliderValue < 80) {
+    output.innerHTML = "Happy";
+  } else if (sliderValue < 90) {
+    output.innerHTML = "Probably Annoying You With MY POSITIVITY!!";
+  } else {
+    output.innerHTML = "Shitty Fucking Rainbows";
+  }
 }
 
 if (window.location.hash.length > 10) {
@@ -29,8 +52,8 @@ $("#apiButton").on("click",function(){
    console.log(window.location)
    var uriHash= window.location.hash //holds the access token
    var accessToken = uriHash.replace('#access_token=', '')
-   console.log(spotifyValance);
-   console.log(genre);
+   // console.log(spotifyValance);
+   // console.log(genre);
    var apiURL= `https://api.spotify.com/v1/recommendations?limit=12&market=US&seed_genres=${genre}&target_valence=${spotifyValance}`
   $.ajax({
       url: apiURL,
