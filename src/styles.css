@@ -1,5 +1,4 @@
 #log-in {
-  background-image: url("https://media.giphy.com/media/Rki7fShXrJ3JZCpVeb/giphy.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -231,4 +230,11 @@ h4 {
     }
     #myValence {
       text-decoration-color: black;
+    }
+    /* p5 styling  */
+    iframe {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transform: translate(-10%, 0%);
     }
