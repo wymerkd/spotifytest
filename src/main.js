@@ -39,8 +39,20 @@ $("#apiButton").on("click",function(){
      },
       success: function(response){
           console.log(response);
-          $("h5").append("<h5>"+response.tracks[0].name+" by "+response.tracks[0].album.artists[0].name+", "+ " on the album " +response.tracks[0].album.name+ " " +response.tracks[0].external_urls.spotify+"</h5>")
-          $("img").attr("src", response.tracks[0].album.images[1].url);
+          $("#h5-1").append("<h5>1 - "+response.tracks[0].name+" by "+response.tracks[0].album.artists[0].name+",<br>"+ "on the album " +response.tracks[0].album.name+"</h5>")
+          $("#h5-2").append("<h5>2 - "+response.tracks[1].name+" by "+response.tracks[1].album.artists[0].name+",<br>"+ " on the album " +response.tracks[1].album.name+"</h5>")
+          $("#h5-3").append("<h5>3 - "+response.tracks[2].name+" by "+response.tracks[2].album.artists[0].name+",<br>"+ " on the album " +response.tracks[2].album.name+"</h5>")
+          $("#h5-4").append("<h5>4 - "+response.tracks[3].name+" by "+response.tracks[3].album.artists[0].name+",<br>"+ " on the album " +response.tracks[3].album.name+"</h5>")
+          $("#h5-5").append("<h5>5 - "+response.tracks[4].name+" by "+response.tracks[4].album.artists[0].name+",<br>"+ " on the album " +response.tracks[4].album.name+"</h5>")
+          $("#h5-6").append("<h5>6 - "+response.tracks[5].name+" by "+response.tracks[5].album.artists[0].name+",<br>"+ " on the album " +response.tracks[5].album.name+"</h5>")
+          $("#h5-7").append("<h5>7 - "+response.tracks[6].name+" by "+response.tracks[6].album.artists[0].name+",<br>"+ " on the album " +response.tracks[6].album.name+"</h5>")
+          $("#h5-8").append("<h5>8 - "+response.tracks[7].name+" by "+response.tracks[7].album.artists[0].name+",<br>"+ " on the album " +response.tracks[7].album.name+"</h5>")
+          $("#h5-9").append("<h5>9 - "+response.tracks[8].name+" by "+response.tracks[8].album.artists[0].name+",<br>"+ " on the album " +response.tracks[8].album.name+"</h5>")
+          $("#h5-10").append("<h5>10 - "+response.tracks[9].name+" by "+response.tracks[9].album.artists[0].name+",<br>"+ " on the album " +response.tracks[9].album.name+"</h5>")
+          $("#h5-11").append("<h5>11 - "+response.tracks[10].name+" by "+response.tracks[10].album.artists[0].name+",<br>"+ " on the album " +response.tracks[10].album.name+"</h5>")
+          $("#h5-12").append("<h5>12 - "+response.tracks[11].name+" by "+response.tracks[11].album.artists[0].name+",<br>"+ " on the album " +response.tracks[11].album.name+"</h5>")
+          $("#img-1").attr("src", response.tracks[0].album.images[1].url);
+          $("#img-2").attr("src", response.tracks[11].album.images[1].url);
 
       },
       error: function(r){
