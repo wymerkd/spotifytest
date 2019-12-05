@@ -131,3 +131,7 @@ a:hover {
   background: #4CAF50;
   cursor: pointer;
 }
+
+#sliderPage {
+  display: none;
+}
