@@ -20,14 +20,12 @@ body {
   background-color: black;
 }
 
-
 #results {
   height: 100vw;
   display: none;
   background-color: #E5F77D;
   background: linear-gradient(178deg, rgba(124,117,152,1) 0%, rgba(210,105,190,0.9808298319327731) 26%, rgba(223,125,125,1) 45%, rgba(185,67,52,0.8071603641456583) 74%, rgba(237,144,73,1) 94%, rgba(229,247,125,1) 100%);
   padding: 5%;
-  /* background-size: 100vw; */
   background-repeat: no-repeat;
 
 }
@@ -66,39 +64,18 @@ h4 {
   .5px -.5px 0 black,
   -.5px .5px 0 black,
   .5px .5px 0 black;
-  /* -webkit-animation-name: example; Safari 4.0 - 8.0
-  -webkit-animation-duration: 4s; Safari 4.0 - 8.0
-  animation-name: example;
-  animation-duration: 4s;  */
 }
 
-
-
-/* Safari 4.0 - 8.0 */
-/* @-webkit-keyframes example {
-  0%   {font-family: 'Montserrat Subrayada', sans-serif;}
-  25%  {font-family: 'Bungee Inline', cursive;}
-  50%  {font-family: 'Montserrat Subrayada', sans-serif;}
-  100% {font-family: 'Bungee Inline', cursive;}
-  } */
-
-  /* Standard syntax */
-  /* @keyframes example {
-    0%   {font-family: 'Montserrat Subrayada', sans-serif;}
-    25%  {font-family: 'Bungee Inline', cursive;}
-    50%  {font-family: 'Montserrat Subrayada', sans-serif;}
-    100% {font-family: 'Bungee Inline', cursive;}
-    } */
-
-
-    #logInBtn {
+#logInBtn {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 40px;
+      transform: translate(-688px, 432px);
+      font-size: 22px;
       font-family: 'Raleway', sans-serif;
       border: 0.5rem double rgb(255, 255, 255, 0.8);
+      z-index: +1;
+      padding: 24px 36px 24px 37px;
     }
 
     img {
