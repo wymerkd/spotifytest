@@ -8,8 +8,12 @@
   width: 100vw;
 }
 #results {
+  /* This is best at 1004 x 969 px */
   display: none;
   background-color: green;
+  background-image: url("http://www.pngall.com/wp-content/uploads/2016/07/Scroll-Download-PNG.png");
+  background-repeat: no-repeat;
+  background-size: 96vw;
   height: 100vw;
   width: 100vw;
 }
