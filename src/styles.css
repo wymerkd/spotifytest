@@ -1,4 +1,5 @@
-#genreBoxes {
+#genreBoxes, #sliderPage {
+
   display: none;
 }
 
@@ -45,21 +46,44 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
-  text-shadow: lightblue;
+  color: rgb(255, 219, 77, 0.9);
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 36px;
   text-shadow:
 		-.5px -.5px 0 black,
 		.5px -.5px 0 black,
 		-.5px .5px 0 black,
 		.5px .5px 0 black;
+  /* -webkit-animation-name: example; Safari 4.0 - 8.0
+  -webkit-animation-duration: 4s; Safari 4.0 - 8.0
+  animation-name: example;
+  animation-duration: 4s;  */
 }
+
+
+/* Safari 4.0 - 8.0 */
+/* @-webkit-keyframes example {
+  0%   {font-family: 'Montserrat Subrayada', sans-serif;}
+  25%  {font-family: 'Bungee Inline', cursive;}
+  50%  {font-family: 'Montserrat Subrayada', sans-serif;}
+  100% {font-family: 'Bungee Inline', cursive;}
+} */
+
+/* Standard syntax */
+/* @keyframes example {
+  0%   {font-family: 'Montserrat Subrayada', sans-serif;}
+  25%  {font-family: 'Bungee Inline', cursive;}
+  50%  {font-family: 'Montserrat Subrayada', sans-serif;}
+  100% {font-family: 'Bungee Inline', cursive;}
+} */
+
 
 #logInBtn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Raleway', sans-serif;
   border: 0.5rem double rgb(255, 255, 255, 0.8);
 }
@@ -73,7 +97,9 @@ a {
 }
 
 .centered:hover {
-  color: yellow;
+  color: rgb(255, 219, 77, 0.9);
+  font-family: 'Bungee Inline', cursive;
+  font-size: 38px;
 }
 
 a:hover {
