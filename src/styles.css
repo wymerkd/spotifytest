@@ -48,13 +48,34 @@ font-family: 'Bungee Inline', cursive; */
   color: rgb(255, 219, 77, 0.9);
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 36px;
-  text-shadow: lightblue;
   text-shadow:
 		-.5px -.5px 0 black,
 		.5px -.5px 0 black,
 		-.5px .5px 0 black,
 		.5px .5px 0 black;
+  /* -webkit-animation-name: example; Safari 4.0 - 8.0
+  -webkit-animation-duration: 4s; Safari 4.0 - 8.0
+  animation-name: example;
+  animation-duration: 4s;  */
 }
+
+
+/* Safari 4.0 - 8.0 */
+/* @-webkit-keyframes example {
+  0%   {font-family: 'Montserrat Subrayada', sans-serif;}
+  25%  {font-family: 'Bungee Inline', cursive;}
+  50%  {font-family: 'Montserrat Subrayada', sans-serif;}
+  100% {font-family: 'Bungee Inline', cursive;}
+} */
+
+/* Standard syntax */
+/* @keyframes example {
+  0%   {font-family: 'Montserrat Subrayada', sans-serif;}
+  25%  {font-family: 'Bungee Inline', cursive;}
+  50%  {font-family: 'Montserrat Subrayada', sans-serif;}
+  100% {font-family: 'Bungee Inline', cursive;}
+} */
+
 
 #logInBtn {
   position: absolute;
