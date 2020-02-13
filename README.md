@@ -1,4 +1,4 @@
-# _SpottyFried_
+# _Spotify Playlist Generator_
 
 #### _This is an application to create a unique music playlist for a user _
 
@@ -8,7 +8,7 @@
 
 _This application creates a custom generated playlist based on user inputted Genre & Mood. The user logs into Spotify, selects a genre and a mood range and is given a suggested playlist using the Spotify Api.
 
-_https://3t8u.github._
+__
 
 ##Specs
 
@@ -55,9 +55,9 @@ _https://3t8u.github._
 ## Setup/Installation Requirements
 
 * _Clone the repository from github_
-* _Initialize the file and install the Webpack_
-* _Run the Webpack in developer mode ($ NPM RUN START)_
-* _Press the Start button_
+* _In the terminal run $ npm install_
+* _To connect to the local server run $ npm run start_
+* _Connect to localhost:8080 in your browser_
 * _When prompted, log into Spotify_
 * _Select your current genre preference_
 * _Adjust the mood slider to reflect the mood desired for your playlist_
